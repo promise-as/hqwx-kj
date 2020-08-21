@@ -1,0 +1,335 @@
+input {
+  text-indent: 1em;
+}
+input,
+select,
+textarea {
+  font-family: "Microsoft YaHei";
+  border: 0;
+}
+input[type="submit"] {
+  text-indent: 0;
+  cursor: pointer;
+}
+input[type="text"],
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &::-webkit-input-placeholder {
+    color: #666;
+    font-size: inherit;
+  }
+  &:-moz-placeholder {
+    color: #666;
+    font-size: inherit;
+  }
+  &::-moz-placeholder {
+    color: #666;
+    font-size: inherit;
+  }
+  &:-ms-input-placeholder {
+    color: #666;
+    font-size: inherit;
+  }
+}
+p {
+  line-height: 1.7;
+}
+%clearfix {
+  zoom: 1;
+  &:after {
+    clear: both;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+}
+%in-b {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+$active-color: #e34341;
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+.prepare {
+  @extend %clearfix;
+  padding-bottom: 40px;
+  .p-title {
+    height: 46px;
+    line-height: 46px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background: url(../images/t-bg.png) no-repeat center;
+  }
+  .p-l {
+    float: left;
+    width: 540px;
+  }
+  .l-difficulty {
+    padding: 20px;
+    margin-bottom: 26px;
+    background-color: #fcf4e0;
+    .d-row {
+      @extend %clearfix;
+      margin-right: -12px;
+      span {
+        float: left;
+        width: 116px;
+        height: 42px;
+        line-height: 42px;
+        margin-right: 12px;
+        font-size: 18px;
+        color: #666666;
+        font-weight: bold;
+        text-align: center;
+      }
+      .r-head {
+        margin-bottom: 10px;
+        background-color: #e34341;
+        border-radius: 3px 3px 0px 0px;
+        color: #fcf4e0;
+      }
+      img {
+        padding-top: 12px;
+      }
+      .text {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: normal;
+      }
+    }
+  }
+  .l-teach {
+    padding: 26px 10px 10px;
+    background: url(../images/bg_1.png) no-repeat;
+    .t-title {
+      line-height: 24px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .sign-in {
+      padding: 24px 10px;
+      background-color: #ffffff;
+      box-shadow: inset 0px 0px 15px 1px rgba(254, 205, 91, 0.6);
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    input,
+    select {
+      width: 158px;
+      height: 40px;
+      line-height: 40px;
+      background-color: #ffffff;
+      border: solid 1px #e5e5e5;
+    }
+    input {
+      margin-right: 6px;
+    }
+    select {
+      padding: 0 1em;
+      background: url(../images/sel.png) no-repeat 90%;
+    }
+    .btn-box {
+      position: relative;
+      height: 46px;
+      line-height: 46px;
+      padding-top: 22px;
+      text-align: center;
+      .btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 218px;
+        border: 0;
+        background-image: linear-gradient(130deg, #fc764a 0%, #f45142 100%), linear-gradient(#fecd5b, #fecd5b);
+        box-shadow: 0px 4px 6px 0px rgba(244, 81, 66, 0.4);
+        border-radius: 23px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      span {
+        position: absolute;
+        right: 30px;
+        color: #999999;
+      }
+    }
+  }
+  .p-r {
+    float: right;
+    width: 540px;
+    padding-top: 24px;
+    text-align: center;
+    background-color: #fcf4e0;
+    li {
+      height: 90px;
+      padding: 20px 30px 0;
+    }
+    .s-key {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .r-head {
+      height: 70px;
+      line-height: 70px;
+      background-color: #fbebc7;
+      font-size: 24px;
+      font-weight: bold;
+      color: #666666;
+    }
+    .r-self {
+      float: left;
+      width: 50%;
+      padding-top: 20px;
+      li {
+        &:nth-child(2) {
+          background-color: #fbebc7;
+        }
+      }
+    }
+    .r-lectures {
+      float: left;
+      width: 50%;
+      color: #ffffff;
+      background-color: #fc764a;
+      border-radius: 6px 0px 0px 0px;
+      .lectures-head {
+        height: 90px;
+        line-height: 90px;
+        background-color: #f45142;
+        border-radius: 6px 0px 0px 0px;
+        color: #ffffff;
+        i {
+          @extend %in-b;
+          width: 40px;
+          height: 44px;
+          margin-left: 4px;
+          background: url(../images/r.png);
+          vertical-align: middle;
+        }
+      }
+      li {
+        &:nth-child(2) {
+          background-color: #f45142;
+        }
+      }
+    }
+  }
+}
+.title {
+  @extend %clearfix;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  .cn,
+  .en {
+    float: left;
+  }
+  strong {
+    color: $active-color;
+  }
+  .en {
+    padding-left: 10px;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #d9d9d9;
+  }
+}
+.data {
+  .d-cont{
+    @extend %clearfix;
+    padding-top: 10px;
+  }
+  ul{
+    float: left;
+    width: 45%;
+    &:first-child{
+      padding-right: 50px;
+      margin-right: 50px;
+      border-right: 1px solid #e8e8e8;
+    }
+  }
+  li {
+    // width: 50%;
+    height: 56px;
+    padding-left: 56px;
+    margin-bottom: 10px;
+    background: url(../images/pdf.png) no-repeat left;
+    &:hover{
+      a{
+        background: $active-color;
+        color: #fff;
+      }
+    }
+  }
+  .c-detail {
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666666;
+    .down{
+      margin-left: 20px;
+    }
+  }
+  a{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-top: 12px;
+    border-radius: 16px;
+    color: $active-color;
+    border: 1px solid $active-color;
+  }
+}
+.form{
+  width: 1100px;
+  height: 102px;
+  margin: 0 auto;
+  background: url(../images/f_1.png) no-repeat;
+  border-radius: 51px;
+  .sign-in {
+    padding: 30px 0 30px 30px;
+    font-size: 14px;
+  }
+  input,
+  select {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 6px;
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+  }
+  select {
+    padding: 0 1em;
+    background: url(../images/sel.png) no-repeat 90% #fff;
+  }
+  .btn {
+    width: 260px;
+    border: 0;
+    background-image: linear-gradient(130deg, #fc764a 0%, #f45142 100%), linear-gradient(#fecd5b, #fecd5b);
+    box-shadow: 0px 4px 6px 0px rgba(244, 81, 66, 0.4);
+    border-radius: 23px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+}

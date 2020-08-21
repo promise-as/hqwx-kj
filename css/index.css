@@ -1,0 +1,73 @@
+input { text-indent: 1em; }
+
+input, select, textarea { font-family: "Microsoft YaHei"; border: 0; }
+
+input[type="submit"] { text-indent: 0; cursor: pointer; }
+
+input[type="text"], select { appearance: none; -moz-appearance: none; -webkit-appearance: none; }
+input[type="text"]::-webkit-input-placeholder, select::-webkit-input-placeholder { color: #666; font-size: inherit; }
+input[type="text"]:-moz-placeholder, select:-moz-placeholder { color: #666; font-size: inherit; }
+input[type="text"]::-moz-placeholder, select::-moz-placeholder { color: #666; font-size: inherit; }
+input[type="text"]:-ms-input-placeholder, select:-ms-input-placeholder { color: #666; font-size: inherit; }
+
+p { line-height: 1.7; }
+
+.prepare, .prepare .l-difficulty .d-row, .title, .data .d-cont { zoom: 1; }
+.prepare:after, .prepare .l-difficulty .d-row:after, .title:after, .data .d-cont:after { clear: both; }
+.prepare:before, .prepare .l-difficulty .d-row:before, .title:before, .data .d-cont:before, .prepare:after, .prepare .l-difficulty .d-row:after, .title:after, .data .d-cont:after { content: ""; display: table; }
+
+.prepare .p-r .r-lectures .lectures-head i { display: inline-block; *zoom: 1; *display: inline; }
+
+.wrap { width: 1100px; margin: 0 auto; }
+
+.prepare { padding-bottom: 40px; }
+.prepare .p-title { height: 46px; line-height: 46px; margin-bottom: 20px; font-size: 24px; font-weight: bold; text-align: center; background: url(../images/t-bg.png) no-repeat center; }
+.prepare .p-l { float: left; width: 540px; }
+.prepare .l-difficulty { padding: 20px; margin-bottom: 26px; background-color: #fcf4e0; }
+.prepare .l-difficulty .d-row { margin-right: -12px; }
+.prepare .l-difficulty .d-row span { float: left; width: 116px; height: 42px; line-height: 42px; margin-right: 12px; font-size: 18px; color: #666666; font-weight: bold; text-align: center; }
+.prepare .l-difficulty .d-row .r-head { margin-bottom: 10px; background-color: #e34341; border-radius: 3px 3px 0px 0px; color: #fcf4e0; }
+.prepare .l-difficulty .d-row img { padding-top: 12px; }
+.prepare .l-difficulty .d-row .text { font-size: 16px; line-height: 22px; font-weight: normal; }
+.prepare .l-teach { padding: 26px 10px 10px; background: url(../images/bg_1.png) no-repeat; }
+.prepare .l-teach .t-title { line-height: 24px; margin-bottom: 20px; font-size: 24px; font-weight: bold; text-align: center; }
+.prepare .l-teach .sign-in { padding: 24px 10px; background-color: #ffffff; box-shadow: inset 0px 0px 15px 1px rgba(254, 205, 91, 0.6); border-radius: 6px; font-size: 14px; }
+.prepare .l-teach input, .prepare .l-teach select { width: 158px; height: 40px; line-height: 40px; background-color: #ffffff; border: solid 1px #e5e5e5; }
+.prepare .l-teach input { margin-right: 6px; }
+.prepare .l-teach select { padding: 0 1em; background: url(../images/sel.png) no-repeat 90%; }
+.prepare .l-teach .btn-box { position: relative; height: 46px; line-height: 46px; padding-top: 22px; text-align: center; }
+.prepare .l-teach .btn-box .btn { position: absolute; left: 0; right: 0; margin: auto; width: 218px; border: 0; background-image: linear-gradient(130deg, #fc764a 0%, #f45142 100%), linear-gradient(#fecd5b, #fecd5b); box-shadow: 0px 4px 6px 0px rgba(244, 81, 66, 0.4); border-radius: 23px; font-size: 18px; font-weight: bold; color: #ffffff; }
+.prepare .l-teach .btn-box span { position: absolute; right: 30px; color: #999999; }
+.prepare .p-r { float: right; width: 540px; padding-top: 24px; text-align: center; background-color: #fcf4e0; }
+.prepare .p-r li { height: 90px; padding: 20px 30px 0; }
+.prepare .p-r .s-key { font-size: 18px; font-weight: bold; line-height: 30px; }
+.prepare .p-r p { font-size: 16px; line-height: 22px; }
+.prepare .p-r .r-head { height: 70px; line-height: 70px; background-color: #fbebc7; font-size: 24px; font-weight: bold; color: #666666; }
+.prepare .p-r .r-self { float: left; width: 50%; padding-top: 20px; }
+.prepare .p-r .r-self li:nth-child(2) { background-color: #fbebc7; }
+.prepare .p-r .r-lectures { float: left; width: 50%; color: #ffffff; background-color: #fc764a; border-radius: 6px 0px 0px 0px; }
+.prepare .p-r .r-lectures .lectures-head { height: 90px; line-height: 90px; background-color: #f45142; border-radius: 6px 0px 0px 0px; color: #ffffff; }
+.prepare .p-r .r-lectures .lectures-head i { width: 40px; height: 44px; margin-left: 4px; background: url(../images/r.png); vertical-align: middle; }
+.prepare .p-r .r-lectures li:nth-child(2) { background-color: #f45142; }
+
+.title { line-height: 30px; font-size: 24px; font-weight: bold; }
+.title .cn, .title .en { float: left; }
+.title strong { color: #e34341; }
+.title .en { padding-left: 10px; line-height: 14px; font-size: 14px; font-weight: normal; color: #d9d9d9; }
+
+.data .d-cont { padding-top: 10px; }
+.data ul { float: left; width: 45%; }
+.data ul:first-child { padding-right: 50px; margin-right: 50px; border-right: 1px solid #e8e8e8; }
+.data li { height: 56px; padding-left: 56px; margin-bottom: 10px; background: url(../images/pdf.png) no-repeat left; }
+.data li:hover a { background: #e34341; color: #fff; }
+.data .c-detail { float: left; line-height: 30px; font-size: 14px; color: #666666; }
+.data .c-detail .down { margin-left: 20px; }
+.data a { float: right; height: 30px; line-height: 30px; padding: 0 10px; margin-top: 12px; border-radius: 16px; color: #e34341; border: 1px solid #e34341; }
+
+.form { width: 1100px; height: 102px; margin: 0 auto; background: url(../images/f_1.png) no-repeat; border-radius: 51px; }
+.form .sign-in { padding: 30px 0 30px 30px; font-size: 14px; }
+.form input, .form select { width: 250px; height: 40px; line-height: 40px; margin-right: 6px; background-color: #ffffff; border: solid 1px #e5e5e5; }
+.form select { padding: 0 1em; background: url(../images/sel.png) no-repeat 90% #fff; }
+.form .btn { width: 260px; border: 0; background-image: linear-gradient(130deg, #fc764a 0%, #f45142 100%), linear-gradient(#fecd5b, #fecd5b); box-shadow: 0px 4px 6px 0px rgba(244, 81, 66, 0.4); border-radius: 23px; font-size: 18px; font-weight: bold; color: #ffffff; }
+
+/*# sourceMappingURL=index.css.map */
